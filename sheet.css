@@ -1,0 +1,77 @@
+
+html,body
+{
+  font-family:'Lato','Arial';
+  font-size: 20px;
+  background-image: url(
+https://i.pinimg.com/originals/af/8d/63/af8d63a477078732b79ff9d9fc60873f.jpg);
+    background-size: cover;
+}
+.form
+{
+  max-width:400px;
+  height: 100%;
+  margin:auto;
+
+}
+h3
+{
+  color: white;
+  text-align: center;
+  padding-bottom: 3px;
+}
+.icon-big{
+    color: blue;
+    font-size: 150%;
+    display:inline-block;
+    margin-bottom: 10px;
+    float: right;
+    margin:0 10px;
+}
+.input-container {
+
+  display: flex;
+  width: 100%;
+  margin-bottom: 2px;
+}
+
+.icon {
+  padding: 10px;
+  background: dodgerblue;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+
+.input-field:focus {
+  border: 2px solid dodgerblue;
+}
+
+.btn1 {
+  background-color: dodgerblue;
+  color: white;
+  margin: 0;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+
+}
+.row
+{
+  border-radius: 40px;
+  margin-top: 16%;
+
+
+}
+.image img{
+  width:120%;
+  border-radius: 30%;
+  margin-left: 0;
+}

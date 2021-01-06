@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="Viewport" content="width=device-width,intial-scale=1.0"
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="vendors\css\ionicons.min.css">
+    <link rel="stylesheet" type="text/css" href="Resources\css\sheet.css">
+      <link rel="stylesheet" type="text/css" href="Resources\css\media.css">
+
+    <link rel="stylesheet" type="text/css" href="vendors\css\normalize.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  </head>
+  <body>
+
+  <div class="container">
+  <div class="row ">
+    <div class="col-6 justift-content-center">
+      <form action="profile.html" method="post" class="form" name="myform" onsubmit="return validateForm()">
+                <h3>Sign In</h3>
+              <div class="input-container">
+           <i class="ion-person icon"></i>
+           <input class="input-field" type="text" placeholder="Username" name="user" >
+         </div><br>
+
+         <div class="input-container">
+           <i class="ion-email icon"></i>
+           <input class="input-field" type="text" placeholder="Email" name="email" required>
+         </div><br>
+
+         <div class="input-container">
+           <i class="ion-key icon"></i>
+           <input class="input-field" type="password" placeholder="Password" name="psw">
+         </div><br>
+
+         <button type="submit" class="btn1">Login</button>
+       </form>
+    </div>
+   <div class="col-4 justift-content-center image">
+     <img src="https://png.pngtree.com/png-vector/20190119/ourmid/pngtree-computer-book-chair-flower-pot-png-image_463528.jpg" alt="">
+   </div>
+
+  </div>
+  <script>
+function validateForm() {
+  var x = document.forms["myform"]["user"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+</script>
+  </body>
+</html>
