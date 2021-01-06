@@ -104,7 +104,7 @@ h3
                 <h3>Sign In</h3>
               <div class="input-container">
            <i class="ion-person icon"></i>
-           <input class="input-field" type="text" placeholder="Username" name="user" >
+           <input class="input-field" type="text" placeholder="Username" name="user" required>
          </div><br>
 
          <div class="input-container">
@@ -114,7 +114,7 @@ h3
 
          <div class="input-container">
            <i class="ion-key icon"></i>
-           <input class="input-field" type="password" placeholder="Password" name="psw">
+           <input class="input-field" type="password" placeholder="Password" name="psw" required>
          </div><br>
 
          <button type="submit" class="btn1">Login</button>
@@ -126,14 +126,7 @@ h3
 
   </div>
   <script>
-function validateForm() {
-  var x = document.forms["myform"]["user"].value;
-  if (x == "") {
-    alert("Name must be filled out");
-    return false;
-  }
-   document.getElementById("formclick").onclick = function () {
-        location.href = "profile.html";
+
 }
 </script>
   </body>
