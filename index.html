@@ -100,7 +100,7 @@ h3
   <div class="container">
   <div class="row ">
     <div class="col-6 justift-content-center">
-      <form action="profile.html" method="post" class="form" name="myform" onsubmit="return validateForm()">
+      <form action="profile.html" method="post" class="form" name="myform" id="formclick" onsubmit="return validateForm()">
                 <h3>Sign In</h3>
               <div class="input-container">
            <i class="ion-person icon"></i>
@@ -132,6 +132,8 @@ function validateForm() {
     alert("Name must be filled out");
     return false;
   }
+   document.getElementById("formclick").onclick = function () {
+        location.href = "profile.html";
 }
 </script>
   </body>
